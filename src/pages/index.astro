@@ -3,9 +3,54 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Schools That Deliver">
-  <main class="container">
-    <div class="book-cover">
-      <img src="/images/book-cover.jpg" alt="Schools That Deliver - Book Cover" />
+  <main class="hero">
+    <div class="book-container">
+      <img 
+        src="/images/book-cover.jpg" 
+        alt="Schools That Deliver - Book Cover by John Edwards and Bill Martin"
+        width="600"
+        height="900"
+      />
+      <h1>Schools That Deliver</h1>
+      <p class="subtitle">John Edwards | Bill Martin</p>
     </div>
   </main>
 </Layout>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  }
+
+  .book-container {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .book-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    color: #94a3b8;
+    font-size: 1.125rem;
+  }
+</style>
