@@ -1,8 +1,7 @@
 name = "schoolsthatdeliver-com"
 account_id = "ef47dc1f8edc736ac21cd17a2a53c107"
 compatibility_date = "2024-01-01"
-compatibility_flags = ["nodejs_compat"]
-main = "./dist/_worker.js"
+main = "workers-site/index.js"
 
 [site]
 bucket = "./dist"
